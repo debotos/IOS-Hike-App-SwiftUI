@@ -7,15 +7,15 @@
 
 import SwiftUI
 
+extension Image {
+    func imageModifier() -> some View {
+        self.resizable().scaledToFit()
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        CardView()
     }
 }
 
